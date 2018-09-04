@@ -20,8 +20,9 @@ description: >- # this means to ignore newlines until "baseurl:"
    guides and how-tos for the AgensGraph Database.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_username: kimkw0227
+linkedin_username: kwan-mo-kim-13ab537a
 github_username:  kimkw0227
+twitter_username: kimkw0227
 
 # Build settings
 markdown: kramdown
