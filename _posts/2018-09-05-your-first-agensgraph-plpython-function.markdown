@@ -13,15 +13,19 @@ PL/python is only available as an "untursted" language, meaning it does not offe
 Before we go further, please make sure you enable the module by typing `CREATE LANGUAGE plpythonu`. 
 
 {% highlight python %}
-CREATE OR REPLACE FUNCTION (ip_str jsonb)
+CREATE OR REPLACE FUNCTION get_ip_family(ip_str jsonb)
 RETURNS int
 AS $$
+
 #Python source code starts
+
 import ipadress
 ip_value = ip_str.replace('\"','')
 return ipaddress.ip_address(unicode(ip_value)).version
+
 #Python source code ends
 $$ LANGUAGE plpythonu
+
 #=> CREATE (a:ip {value:'192.168.0.28'});
 #=> CREATE (a:ip {value:'2001:0db8:85a3:0000:0000:8a2e:0370:7334'});
 #=> MATCH (a:ip) RETURN a,value,get_ip_family(a.value);
