@@ -17,7 +17,7 @@ CREATE OR REPLACE FUNCTION get_ip_family(ip_str jsonb)
 RETURNS int
 AS $$
 #Python source code starts
-import ipadress
+import ipaddress
 
 ip_value = ip_str.replace('\"','')
 return ipaddress.ip_address(unicode(ip_value)).version
