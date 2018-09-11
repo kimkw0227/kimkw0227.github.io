@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+AgensGraph is the new generation multi-model graph database for the modern complex data environment. It enables developers to integrate the legacy relational data model and the graph data model into one database. SQL query and Cypher query can be integrated into a single query in AgensGraph.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+You can find the source code for AgensGraph at GitHub:
+[agensgraph-github][AgensGraph-github] /
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+You can find the documents for AgensGraph at BitNine website:
+[agensgraph-documents][AgensGraph-docs] /
 
 
-[jekyll-organization]: https://github.com/jekyll
+[AgensGraph-github]: https://github.com/bitnine-oss/agensgraph
+[AgensGraph-docs]: https://bitnine.net/documentation
