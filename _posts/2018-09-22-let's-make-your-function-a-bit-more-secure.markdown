@@ -13,11 +13,15 @@ The magic keywords are `revoke execut on` and `grant execute on`. You can revoke
 {% highlight sql %}
 #=> CREATE USER test1;GRANT ALL ON DATABASE superdb TO test1;
 #=> CREATE USER test2;GRANT ALL ON DATABASE superdb TO test2;
+
 REVOKE EXECUTE ON FUNCTION get_ip_family(ip_str jsonb) FROM public;
+
 #=> Access to AgensGraph using user test1
 #=> Test Query.1:MATCH (a:ip) RETURN a.value,get_ip_family(a.value);
 #=> prints 'ERROR: permission denied for function get_ip_family'
+
 GRANT EXECUTE ON FUNCTION get_ip_family(ip_str jsonb) TO test2;
+
 #=> Access to AgensGraph using user test2
 #=> Test Query.2:MATCH (a:ip) RETURN a.value,get_ip_family(a.value);
 #=> prints '4'
