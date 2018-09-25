@@ -25,7 +25,7 @@ return ipaddress.ip_address(unicode(ip_value)).version
 $$ LANGUAGE plpythonu
 #=> CREATE (a:ip {value:'192.168.0.28'});
 #=> CREATE (a:ip {value:'2001:0db8:85a3:0000:0000:8a2e:0370:7334'});
-#=> MATCH (a:ip) RETURN a,value,get_ip_family(a.value);
+#=> MATCH (a:ip) RETURN a.value,get_ip_family(a.value);
 #=> prints '4' for IPv4Address '192.168.0.28'. 
 #=> prints '6' for IPv6Address '2001:0db8:85a3:0000:0000:8a2e:0370:7334'.
 {% endhighlight %}
