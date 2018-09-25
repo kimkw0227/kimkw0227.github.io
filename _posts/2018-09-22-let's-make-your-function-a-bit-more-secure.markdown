@@ -8,7 +8,7 @@ In the previous post, I posted how to make a simple function using PL/Python. Li
 
 It is unlikely that we let unwanted users to access and use functions, because they are written in `plpythonu`. Therefore, I would like to share some ways to prevent unwanted users from using functions that they are not allowed to. 
 
-The magic keywords are `revoke execut on` and `grant execute on`. You can revoke execution on certain function from all users, then you can grant usage on the funtion to certain user or certain groups. The following example revokes permission from general users and grant only user test2 to use the function `get_ip_family`.
+The magic keywords are `revoke execute on` and `grant execute on`. You can revoke execution on certain function from all users, then you can grant usage on the funtion to certain user or certain groups. The following example revokes permission from general users and grant only user test2 to use the function `get_ip_family`.
 
 {% highlight sql %}
 #=> CREATE USER test1;GRANT ALL ON DATABASE superdb TO test1;
