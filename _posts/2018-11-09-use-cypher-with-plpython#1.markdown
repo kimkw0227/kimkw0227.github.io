@@ -13,7 +13,8 @@ CREATE OR REPLACE FUNCTION cypher_test()
 RETURNS void
 AS $$
 #Python source code starts
-#Assume that you have a vertex with label test and property text
+#Assume that you have a vertex with label, called "test" and property, called text
+#=> CREATE (a:test {id:1,text:'hello'})
 records = plpy.execute("MATCH (a:test) RETURN a.text AS sample")
 
 plpy.info(records[0]['sample'])
