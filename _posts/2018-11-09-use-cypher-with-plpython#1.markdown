@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Let's write your first PL/Python function on AgensGraph!"
+title:  "Use cypher with your plpython#1"
 date:   2018-11-09 11:33:00 +0900
 categories: jekyll update
 ---
