@@ -21,7 +21,7 @@ records = plpy.execute(plan,[2])
 return records[0]['sample']
 #Python source code ends
 $$ LANGUAGE plpythonu
-#=> prints 'hello' as a result 
+#=> prints 'test' as a result 
 {% endhighlight %}
 
 - `plpy.prepare` prepares the execution plan for a given query.
