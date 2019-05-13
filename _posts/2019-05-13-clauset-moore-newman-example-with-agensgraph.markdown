@@ -1,14 +1,13 @@
 ---
 layout: post
-title:  "Use cypher with your plpython#2"
-date:   2018-11-20 18:21:00 +0900
+title:  "clauset-moore-newman example with AgensGraph"
+date:   2019-05-13 18:21:00 +0900
 categories: jekyll update
 ---
 In this post, we will use plpython function to write clauset-newman-moore clustering algorithm.(https://bit.ly/2YmS6Dp)
 
 {% highlight python %}
-
-REATE OR REPLACE FUNCTION clauset_newman_moore_script()
+CREATE OR REPLACE FUNCTION clauset_newman_moore_script()
 RETURNS void as $$
 import time
 import networkx as nx
